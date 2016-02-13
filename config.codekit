@@ -785,6 +785,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/Scans\/back_view.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 771125,
+		"inputAbbreviatedPath": "\/images\/Scans\/back_view.jpg",
+		"outputAbbreviatedPath": "\/images\/Scans\/back_view.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Scans\/side_profile1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 838686,
+		"inputAbbreviatedPath": "\/images\/Scans\/side_profile1.jpg",
+		"outputAbbreviatedPath": "\/images\/Scans\/side_profile1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Scans\/side_profile2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 823656,
+		"inputAbbreviatedPath": "\/images\/Scans\/side_profile2.jpg",
+		"outputAbbreviatedPath": "\/images\/Scans\/side_profile2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Scans\/top_view1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 842160,
+		"inputAbbreviatedPath": "\/images\/Scans\/top_view1.jpg",
+		"outputAbbreviatedPath": "\/images\/Scans\/top_view1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/thumbs\/01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
