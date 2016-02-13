@@ -435,6 +435,28 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/branding\/256x256.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10641,
+		"inputAbbreviatedPath": "\/branding\/256x256.png",
+		"outputAbbreviatedPath": "\/branding\/256x256.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/branding\/64x64.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2233,
+		"inputAbbreviatedPath": "\/branding\/64x64.png",
+		"outputAbbreviatedPath": "\/branding\/64x64.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/branding\/Horizontal - Alt.png": {
 		"fileType": 32768,
 		"ignore": 0,
