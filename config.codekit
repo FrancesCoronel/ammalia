@@ -435,6 +435,28 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/branding\/256x256.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10641,
+		"inputAbbreviatedPath": "\/branding\/256x256.png",
+		"outputAbbreviatedPath": "\/branding\/256x256.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/branding\/64x64.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2233,
+		"inputAbbreviatedPath": "\/branding\/64x64.png",
+		"outputAbbreviatedPath": "\/branding\/64x64.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/branding\/Horizontal - Alt.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -522,6 +544,114 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/favicons\/favicon-114.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4102,
+		"inputAbbreviatedPath": "\/favicons\/favicon-114.png",
+		"outputAbbreviatedPath": "\/favicons\/favicon-114.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/favicons\/favicon-120.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4539,
+		"inputAbbreviatedPath": "\/favicons\/favicon-120.png",
+		"outputAbbreviatedPath": "\/favicons\/favicon-120.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/favicons\/favicon-144.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5396,
+		"inputAbbreviatedPath": "\/favicons\/favicon-144.png",
+		"outputAbbreviatedPath": "\/favicons\/favicon-144.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/favicons\/favicon-152.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5798,
+		"inputAbbreviatedPath": "\/favicons\/favicon-152.png",
+		"outputAbbreviatedPath": "\/favicons\/favicon-152.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/favicons\/favicon-180.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7083,
+		"inputAbbreviatedPath": "\/favicons\/favicon-180.png",
+		"outputAbbreviatedPath": "\/favicons\/favicon-180.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/favicons\/favicon-192.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7569,
+		"inputAbbreviatedPath": "\/favicons\/favicon-192.png",
+		"outputAbbreviatedPath": "\/favicons\/favicon-192.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/favicons\/favicon-32.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1060,
+		"inputAbbreviatedPath": "\/favicons\/favicon-32.png",
+		"outputAbbreviatedPath": "\/favicons\/favicon-32.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/favicons\/favicon-57.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1982,
+		"inputAbbreviatedPath": "\/favicons\/favicon-57.png",
+		"outputAbbreviatedPath": "\/favicons\/favicon-57.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/favicons\/favicon-72.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2446,
+		"inputAbbreviatedPath": "\/favicons\/favicon-72.png",
+		"outputAbbreviatedPath": "\/favicons\/favicon-72.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/favicons\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/favicons\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/images\/fulls\/01.jpg": {
 		"fileType": 16384,
@@ -651,6 +781,50 @@
 		"initialSize": 39947,
 		"inputAbbreviatedPath": "\/images\/fulls\/12.jpg",
 		"outputAbbreviatedPath": "\/images\/fulls\/12.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Scans\/back_view.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 771125,
+		"inputAbbreviatedPath": "\/images\/Scans\/back_view.jpg",
+		"outputAbbreviatedPath": "\/images\/Scans\/back_view.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Scans\/side_profile1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 838686,
+		"inputAbbreviatedPath": "\/images\/Scans\/side_profile1.jpg",
+		"outputAbbreviatedPath": "\/images\/Scans\/side_profile1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Scans\/side_profile2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 823656,
+		"inputAbbreviatedPath": "\/images\/Scans\/side_profile2.jpg",
+		"outputAbbreviatedPath": "\/images\/Scans\/side_profile2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Scans\/top_view1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 842160,
+		"inputAbbreviatedPath": "\/images\/Scans\/top_view1.jpg",
+		"outputAbbreviatedPath": "\/images\/Scans\/top_view1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

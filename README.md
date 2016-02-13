@@ -2,6 +2,10 @@
 
 ![logo](branding/Horizontal.png)
 
+## Inspiration
+
+- https://github.com/leapmotion/VRCollage
+
 ## Name
 
 `Ammalia` means surgery in Arabic
