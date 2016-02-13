@@ -1,6 +1,6 @@
 # Ammalia
 
-![logo](images/Horizontal.png)
+![logo](branding/Horizontal.png)
 
 ## Name
 
@@ -16,7 +16,7 @@ Where surgeons go to explore.
 
 ## Description
 
-Ammalia is a Leap Motion assisted app that allows a surgeon to analyze pictures of their patient’s problem (i.e. brain tumors) using the Dropbox API.
+Ammalia is a Leap Motion assisted app that allows a surgeon to analyze pictures of their patient's problem (i.e. brain tumors) using the Dropbox API.
 
 ## Tools
 
@@ -57,3 +57,16 @@ We created a Leap Motion assisted application that utilizes the Dropbox API to s
 - Use cases?
 
 > The areas we believe Ammalia could be the most useful is with radiology image manipulation / scrolling while scrubbed in & sterile in the OR.
+
+## Links
+
+- Google Slides: https://docs.google.com/presentation/d/1mchd_o4IJ-x910CDxPIdBNIgvsS2QOiTWx4-frbWfpQ/edit?usp=sharing
+
+## Dummy Account
+
+-
+
+## Branding
+
+- Theme Color: `#62A7C6`
+- Font: `Karla`
