@@ -1,6 +1,6 @@
 # Ammalia
 
-![logo](images/Horizontal.png)
+![logo](branding/Horizontal.png)
 
 ## Name
 
