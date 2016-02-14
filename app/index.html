@@ -1,16 +1,64 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title> Ammalia</title>
-		<link rel="stylesheet" href="./assets/css/index.css" />
-	</head>
-	<body>
-		<div class="mainInfo">
-			<form method='#'>
-				<input type="text" name="username" id="username" placeholder="Username" />
-				<input type="text" name="password" id="password" placeholder="Password" />
-			</form>
-			<button type="login" id="loginButton">Login</button>
-		</div>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Leap Motion assisted web app that helps surgeons explore images.">
+    <meta name="author" content="Big Hero 4">
+    <link rel="icon" href="../favicons/favicon.ico">
+    <title>Ammalia</title>
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/custom.min.css" rel="stylesheet">
+    <!-- Leap JS -->
+    <script src="http://js.leapmotion.com/leap-0.6.4.min.js"></script>
+    <!-- Leap Plugins -->
+    <script src="http://js.leapmotion.com/leap-plugins-0.1.11.min.js"></script>
+    <!-- Custom Leap JS -->
+    <script src="ammalia.js"></script>
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">Cover</h3>
+                        <nav class="nav nav-masthead">
+                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">Contact</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="inner cover">
+                    <h1 class="cover-heading">Cover your page.</h1>
+                    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+                    <form method='#'>
+                        <input type="text" name="username" id="username" placeholder="Username" />
+                        <input type="text" name="password" id="password" placeholder="Password" />
+                    </form>
+                    <p class="lead">
+                        <a href="#" class="btn btn-lg btn-primary">Login with Dropbox</a>
+                    </p>
+                </div>
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Bootstrap 4 JS -->
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+</body>
+
 </html>
