@@ -58,7 +58,7 @@ for (var i = 0; i < patients.length; i++) {
 var button = document.createElement("button");
 button.type = "submit";
 button.id = "LogoutButton";
-button.value = "Logout";
+button.innerHTML = "Logout";
 
 mainInfo.appendChild(button);
 document.getElementById("overall").appendChild(dateHead);
