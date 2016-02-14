@@ -71,10 +71,6 @@ We created a Leap Motion assisted application that utilizes the Dropbox API to s
 
 - Google Slides: https://docs.google.com/presentation/d/1mchd_o4IJ-x910CDxPIdBNIgvsS2QOiTWx4-frbWfpQ/edit?usp=sharing
 
-## Dummy Account
-
--
-
 ## Branding
 
 - Theme Color: `#62A7C6`
