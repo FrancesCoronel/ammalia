@@ -22,7 +22,9 @@
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="favicon-144.png">
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/main.css') }}">
+
 </head>
 
 <body>
@@ -54,17 +56,17 @@
                 <img src="http://a57.foxnews.com/images.foxnews.com/content/fox-news/health/2015/11/10/promise-seen-for-wireless-pacemakers-placed-without-surgery/_jcr_content/par/featured-media/media-0.img.jpg/876/493/1447160388550.jpg?ve=1&tl=1" class="even" alt="" />
             </article>
             <article class="thumb logo">
-                <img src="branding/Horizontal - Copy (2).png" alt="" class="logo" />
+                <img src="{{ url_for('static', filename='branding/Horizontal - Copy (2).png') }}" alt="" class="logo" />
                 <h1><a class="link" href="http://www.google.com"> Download </a></h1>
             </article>
             <article class="thumb large">
-                <img src="images/thumbs/Surgeons.png" class="large" alt="" />
+                <img src="{{ url_for('static', filename='images/thumbs/Surgeons.png') }}" class="large" alt="" />
             </article>
             <article class="thumb">
                 <img src="http://www.dentalsolutionblog.com/wp-content/uploads/2015/01/x-ray.png" alt="" />
             </article>
             <article class="thumb small">
-                <img src="images/thumbs/Surgeons2.png" class="small" alt="" />
+                <img src="{{ url_for('static', filename='images/thumbs/Surgeons2.png') }}" class="small" alt="" />
             </article>
             <article class="thumb large">
                 <img src="http://blogs.scientificamerican.com/streams-of-consciousness/files/2011/12/Screen-shot-2011-12-12-at-11.03.30-AM.png" alt="" class="large" />
@@ -91,12 +93,12 @@
         </footer>
     </div>
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.poptrox.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-    <script src="assets/js/main.js"></script>
+    <script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/jquery.poptrox.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/skel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+    <!--[if lte IE 8]><script src="{{ url_for('static', filename='assets/js/ie/respond.min.js') }}"></script><![endif]-->
+    <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
 </body>
 
 </html>
