@@ -12,44 +12,11 @@ Leap.loop(function(frame) {
 }).use('screenPosition', {
     scale: 0.25
 });*/
+Leap.loop()
+    .use('zoomEvent')
+    .use('swipeEvent');
 
-Leap.loop({
-    hand: function(hand) {
-        if (hand.pinchStrength > 0) {
-            var pincher;
-            var closest = 500;
-            var a;
-            var cat;
-            for (var f = 1; f < 5; f++) {
-                current = hand.fingers[f];
-                distance = Leap.vec3.distance(hand.thumb.tipPosition, current.tipPosition);
-                if (current != hand.thumb && distance < closest) {
-                    closest = distance;
-                    pincher = current;
-                    a = hand.pinchStrength;
-                }
-            }
-            if (pincher == hand.indexFinger) {
-                cat = (cats[0] || (cats[0] = new Cat()));
-                console.log(" the finger is index " + pincher.type + "<br />");
-                /*if (0.50 > a) {
-                    //  var cat =( cats[0] || (cats[0] = new Cat()));
-                    cat.setTransform(0, 0, 1.1, 1.1);
-                    //zoom(1.1);
-                    console.log(" the finger is index 22222222222 " + "<br />");
-                }*/
-                if (a >= 0.3 && a <= 0.7) {
-                    // var cat =( cats[0] || (cats[0] = new Cat()));
-                    cat.setTransform(0, 0, 0.9, 0.9);
-                    //zoom(0.9);
-                    console.log(" the finger is index 11111111111 " + "<br />");
-                }
-            }
-        }
-    }
-}).use('screenPosition', {
-    scale: 0.25
-});
+// Setup Leap loop with frame callback function
 
 /*var controller = new Leap.Controller({
     enableGestures: true
@@ -79,13 +46,16 @@ var cats = {};
 
 var Cat = function() {
     var cat = this;
-    var img = document.createElement('img');
+    /*var img = document.createElement('img');
     img.src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/109794/cat_2.png';
     img.style.position = 'absolute';
     img.onload = function() {
         cat.setTransform([window.innerWidth / 2, window.innerHeight / 2], 0);
         document.body.appendChild(img);
-    };
+    };*/
+    var img = document.getElementById("mainImage");
+    console.log("source: " + img.src);
+    img.style.position = 'absolute';
 
     var b, c = 0;
     cat.setTransform = function(b, c, zm1, zm2) {
@@ -102,9 +72,11 @@ var Cat = function() {
             img.style.OTransform = img.style.transform;
 
     };
+    
 };
 
 cats[0] = new Cat();
+
 
 
 /*var Cat = function() {
