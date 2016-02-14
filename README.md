@@ -1,6 +1,8 @@
 # Ammalia
 
-![logo](branding/Horizontal.png)
+![logo](static/images/Horizontal.png)
+
+![treehacks](static/images/treehacks.png)
 
 ## Inspiration
 
