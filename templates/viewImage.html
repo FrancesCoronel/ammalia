@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title></title>
+    	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/viewImage.css') }}" />
+	</head>
+	<body>
+		<img id="mainImage" src="{{ url_for('static', filename='images/Scans/top_view1.jpg') }}">
+
+		<!-- Leap JS -->
+	    <script src="http://js.leapmotion.com/leap-0.6.4.min.js"></script>
+	    <!-- Leap Plugins -->
+	    <script src="http://js.leapmotion.com/leap-plugins-0.1.11.min.js"></script>
+	    <script type="text/javascript" src="{{ url_for('static', filename='assets/js/events/zoomEvent.js') }}"></script>
+	   	<script type="text/javascript" src="{{ url_for('static', filename='assets/js/events/swipeEvent.js') }}"></script>
+    	<script type="text/javascript" src="{{ url_for('static', filename='assets/js/ammalia.js') }}"></script>
+	</body>
+</html>
+
+

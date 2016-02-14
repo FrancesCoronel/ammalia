@@ -12,6 +12,11 @@ def home():
 	
 	return render_template('index.html')
 
+@app.route('/ammalia')
+def test():
+	
+	return render_template('viewimage.html')
+
 @app.route('/images')
 def images():
 	
