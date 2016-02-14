@@ -1,30 +1,39 @@
 var doctorInfo = [{
 	"doctor": "Michael Scott Anderson",
-	"patients": [
+	"dates": [
 		{
-			"id": 1234567,
-			"name": "Huey Freeman",
-			"surgeryDate": "02/13/2016",
-			"surgeryTime": "9:30 AM",
-			"surgeryOR": 123
-		},{
-			"id": 1234568,
-			"name": "Joanna Anne McCoy",
-			"surgeryDate": "02/13/2016",
-			"surgeryTime": "1:30 PM",
-			"surgeryOR": 124
+			"date": "02/14/2016",
+			"patients": [
+				{
+					"id": 1234567,
+					"name": "Huey Freeman",
+					"image": "assets/images/profileReplacement.png",
+					"surgeryTime": "9:30 AM",
+					"surgeryOR": 123
+				},{
+					"id": 1234568,
+					"name": "Joanna Anne McCoy",
+					"image": "assets/images/profileReplacement.png",
+					"surgeryTime": "1:30 PM",
+					"surgeryOR": 124
+				}
+			]
 		}
 	]
 },
 {
 	"doctor": "Katie Holmes",
-	"patients": [
+	"dates": [
 		{
-			"id": 1234569,
-			"name": "Chance Michael Woods",
-			"surgeryDate": "02/13/2016",
-			"surgeryTime": "9:45 AM",
-			"surgeryOR": 125
+			"date": "02/14/2016",
+			"patients": [
+				{
+					"id": 1234569,
+					"name": "Chance Michael Woods",
+					"surgeryTime": "9:45 AM",
+					"surgeryOR": 125
+				}
+			]
 		}
 	]
 }];
