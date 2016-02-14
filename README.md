@@ -5,6 +5,11 @@
 ## Inspiration
 
 - https://github.com/leapmotion/VRCollage
+- https://community.leapmotion.com/t/pinch-gesture-javascript/2640
+- https://developer.leapmotion.com/documentation/javascript/devguide/Leap_Gestures.html
+- https://developer.leapmotion.com/documentation/javascript/devguide/Leap_Gestures.html
+- https://developer.leapmotion.com/documentation/javascript/api/Leap.ScreenTapGesture.html
+- https://developer.leapmotion.com/documentation/javascript/api/Leap.Controller.html
 
 ## Name
 
