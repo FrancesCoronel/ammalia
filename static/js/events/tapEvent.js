@@ -65,8 +65,8 @@ var anim = new Kinetic.Animation(function (frame) {
                 tips[tipPointer].setFillRGB({r: 0, g: 0, b: 128});
             }
             if (tipPointer < 1) tipPointer++;
-            if (count > 400) {
-            	window.location.replace("./viewImage.html");
+            if (count > 500) {
+            	location.replace('/ammalia');
             }
         }
         while (tipPointer <= 1) tips[tipPointer++].setVisible(false);
