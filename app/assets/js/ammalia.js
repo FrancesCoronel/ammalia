@@ -107,7 +107,7 @@ var Cat = function() {
         var left = position[0] - img.width / 2;
         var leftLimit = ((percentWidth - 1) * img.parentNode.clientWidth);
         console.log("%Width: " + percentWidth + " top potential: " + left + " limit: " + leftLimit);
-        if (percentWidth > 1 && (left < ((percentWidth - 1) * img.parentNode. clientWidth))) {
+        if (percentWidth >= 1 && (left < ((percentWidth - 1) * img.parentNode. clientWidth))) {
             img.style.left = position[0] - img.width  / 2 + 'px';
         }
 
@@ -122,7 +122,7 @@ var Cat = function() {
         var top = position[1] - img.height / 2;
         var topLimit = ((percentHeight - 1) * img.parentNode.clientHeight);
         console.log("%Height: " + percentHeight + " top potential: " + Math.abs(top) + " limit: " + topLimit);
-        if (percentHeight > 1 && (Math.abs(top) < ((percentHeight - 1) * img.parentNode.clientHeight))) {
+        if (percentHeight >= 1 && (Math.abs(top) < ((percentHeight - 1) * img.parentNode.clientHeight))) {
             img.style.top = Math.min(0, position[1] - img.height / 2) + 'px';
             img.style.bottom = Math.max(position[1] - img.height / 2, -1 * img.height);
         }

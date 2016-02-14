@@ -8,10 +8,10 @@ Leap.plugin('zoomEvent', function(scope){
         hand: function(hand){
             var radius = hand.sphereRadius;
             console.log("Sphere Radius: " + radius);
-            //if (hand.pinchStrength > 0) {
-                //var pincher;
-                //var closest = 500;
-                //var a;
+            /*if (hand.pinchStrength > 0) {
+                var pincher;
+                var closest = 500;
+                var a;*/
                 var cat;
 
                 /*for (var f = 1; f < 5; f++) {
@@ -31,7 +31,7 @@ Leap.plugin('zoomEvent', function(scope){
                 console.log("Extended fingers: " + extendedFingers);
                 var normal = hand.palmNormal;
                 console.log("normal[0] = " + normal[0] + "normal[1] = " + normal[1] + "normal[2]" + normal[2]);
-                if (normal[2] > -0.5 && extendedFingers < 3 && radius <= 60) {
+                if (normal[2] > -.2 && normal[2] < 0.5 && extendedFingers < 3  && extendedFingers > 0 && radius <= 60) {
                     cat = (cats[0] || (cats[0] = new Cat()));
                     //console.log(" the finger is index " + pincher.type + "<br />");
 
@@ -45,17 +45,17 @@ Leap.plugin('zoomEvent', function(scope){
                     //console.log('Fingerlist: ' + extendedFingerList.length);
                     //if (a >= 0.3 && a <= 0.7) {
                         // var cat =( cats[0] || (cats[0] = new Cat()));
-                        cat.setZoom(0, 0, 0.97, 0.97);
+                        cat.setZoom(0, 0, 0.99, 0.99);
                         //zoom(0.9);
                         console.log(" zoom out");
                     //}
 
 
-                } else if (normal[2] > 0 && extendedFingers >= 3 && radius >= 50) {
+                } else if (normal[2] > -0.2 && normal[2] < 0.5 && extendedFingers > 0 && radius >= 50) {
                     cat = (cats[0] || (cats[0] = new Cat()));
                     //if (a >= 0.3 && a <= 0.7) {
                         // var cat =( cats[0] || (cats[0] = new Cat()));
-                        cat.setZoom(0, 0, 1.02, 1.02);
+                        cat.setZoom(0, 0, 1.01, 1.01);
                         //zoom(0.9);
                         console.log("zoom in");
                     //}

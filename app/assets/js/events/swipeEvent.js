@@ -9,7 +9,12 @@ Leap.plugin('swipeEvent', function(scope){
       frame.hands.forEach(function(hand, index) {
         var cat = ( cats[index] || (cats[index] = new Cat()) );
         var normal = hand.palmNormal;
-        if (normal[2] < -0.5) {
+        var extendedFingers = 0;
+        for(var f = 0; f < hand.fingers.length; f++){
+            var finger = hand.fingers[f];
+            if(finger.extended) extendedFingers++;
+        }
+        if (extendedFingers == 0 || normal[2] < -0.5) {
           cat.setSwipe(hand.screenPosition());
         }
       });
