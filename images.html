@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Webpage</title>
+<!-- myjs.js would be the js file frances is writting to pass the url's of all the images 
+    <script type="text/javascript" src="myjs.js"></script> -->
+</head>
+<body>
+    {% for image in images %}
+        <img src="{{ image.url }}"/>
+    {% endfor %}
+</body>
+</html>
+
+

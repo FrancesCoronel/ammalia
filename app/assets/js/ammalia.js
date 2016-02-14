@@ -1,32 +1,4 @@
-var Cat = function() {
-    var cat = this;
-    var img = document.createElement('img');
-    img.src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/109794/cat_2.png';
-    img.style.position = 'absolute';
-    img.onload = function() {
-        cat.setTransform([window.innerWidth / 2, window.innerHeight / 2], 0);
-        document.body.appendChild(img);
-    };
-
-    var b, c = 0;
-    cat.setTransform = function(b, c, zm1, zm2) {
-
-        wid = img.width;
-        ht = img.height;
-
-        img.style.width = (wid * zm) + "px";
-        img.style.height = (ht * zm) + "px";
-        img.style.marginLeft = -(img.width / 2) + "px";
-        img.style.marginTop = -(img.height / 2) + "px";
-
-        img.style.webkitTransform = img.style.MozTransform = img.style.msTransform =
-            img.style.OTransform = img.style.transform;
-
-    };
-};
-cats[0] = new Cat();
-
-var cats = {};
+/*var cats = {};
 
 Leap.loop(function(frame) {
 
@@ -39,7 +11,7 @@ Leap.loop(function(frame) {
 
 }).use('screenPosition', {
     scale: 0.25
-});
+});*/
 
 Leap.loop({
     hand: function(hand) {
@@ -47,6 +19,7 @@ Leap.loop({
             var pincher;
             var closest = 500;
             var a;
+            var cat;
             for (var f = 1; f < 5; f++) {
                 current = hand.fingers[f];
                 distance = Leap.vec3.distance(hand.thumb.tipPosition, current.tipPosition);
@@ -57,26 +30,28 @@ Leap.loop({
                 }
             }
             if (pincher == hand.indexFinger) {
-                var cat = (cats[0] || (cats[0] = new Cat()));
-                document.write(" the finger is index " + pincher.type + "<br />");
-            }
-            if (0.50 > a && a >= 0) {
-                //  var cat =( cats[0] || (cats[0] = new Cat()));
-                cat.setTransform(0, 0, 1.1, 1.1);
-                //zoom(1.1);
-                document.write(" the finger is index 22222222222 " + "<br />");
-            }
-            if (1 > a && a >= 0.50) {
-                // var cat =( cats[0] || (cats[0] = new Cat()));
-                cat.setTransform(0, 0, 0.9, 0.9);
-                //zoom(0.9);
-                document.write(" the finger is index 11111111111 " + "<br />");
+                cat = (cats[0] || (cats[0] = new Cat()));
+                console.log(" the finger is index " + pincher.type + "<br />");
+                /*if (0.50 > a) {
+                    //  var cat =( cats[0] || (cats[0] = new Cat()));
+                    cat.setTransform(0, 0, 1.1, 1.1);
+                    //zoom(1.1);
+                    console.log(" the finger is index 22222222222 " + "<br />");
+                }*/
+                if (a >= 0.3 && a <= 0.7) {
+                    // var cat =( cats[0] || (cats[0] = new Cat()));
+                    cat.setTransform(0, 0, 0.9, 0.9);
+                    //zoom(0.9);
+                    console.log(" the finger is index 11111111111 " + "<br />");
+                }
             }
         }
     }
+}).use('screenPosition', {
+    scale: 0.25
 });
 
-var controller = new Leap.Controller({
+/*var controller = new Leap.Controller({
     enableGestures: true
 });
 
@@ -98,9 +73,41 @@ controller.on('frame', function(frame) {
     lastFrame = frame;
 });
 
-controller.connect();
+controller.connect();*/
+
+var cats = {};
 
 var Cat = function() {
+    var cat = this;
+    var img = document.createElement('img');
+    img.src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/109794/cat_2.png';
+    img.style.position = 'absolute';
+    img.onload = function() {
+        cat.setTransform([window.innerWidth / 2, window.innerHeight / 2], 0);
+        document.body.appendChild(img);
+    };
+
+    var b, c = 0;
+    cat.setTransform = function(b, c, zm1, zm2) {
+
+        b = img.width;
+        c = img.height;
+
+        img.style.width = (b * zm1) + "px";
+        img.style.height = (c * zm2) + "px";
+        img.style.marginLeft = -(img.width / 2) + "px";
+        img.style.marginTop = -(img.height / 2) + "px";
+
+        img.style.webkitTransform = img.style.MozTransform = img.style.msTransform =
+            img.style.OTransform = img.style.transform;
+
+    };
+};
+
+cats[0] = new Cat();
+
+
+/*var Cat = function() {
     var cat = this;
     var img = document.createElement('img');
     img.src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/109794/cat_2.png';
@@ -120,4 +127,5 @@ var Cat = function() {
 cats[0] = new Cat();
 
 // This allows us to move the cat even whilst in an iFrame.
-Leap.loopController.setBackground(true)
+Leap.loopController.setBackground(true);*/
+
