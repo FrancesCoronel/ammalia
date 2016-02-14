@@ -2,7 +2,7 @@ import dropbox
 # import UploadSessionCursor
 
 
-#Connect to dropbox 
+#Connect to dropbox
 dbx = dropbox.Dropbox('CzDOpqjLiK0AAAAAAAAEC4g3rnqNqhPkGHUqGwUrzopn6kIDf0UHJzC1vUdsu2T2')
 dbx.users_get_current_account()
 
@@ -31,7 +31,7 @@ print(links)
 
 
 
-	
+
 # #get data and store in array found below
 # data.append(url)
 
