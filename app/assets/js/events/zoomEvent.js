@@ -7,7 +7,7 @@ Leap.plugin('zoomEvent', function(scope){
     return {
         hand: function(hand){
             var radius = hand.sphereRadius;
-            console.log("Sphere Radius: " + radius);
+            //console.log("Sphere Radius: " + radius);
             /*if (hand.pinchStrength > 0) {
                 var pincher;
                 var closest = 500;
@@ -28,9 +28,9 @@ Leap.plugin('zoomEvent', function(scope){
                     var finger = hand.fingers[f];
                     if(finger.extended) extendedFingers++;
                 }
-                console.log("Extended fingers: " + extendedFingers);
+                //console.log("Extended fingers: " + extendedFingers);
                 var normal = hand.palmNormal;
-                console.log("normal[0] = " + normal[0] + "normal[1] = " + normal[1] + "normal[2]" + normal[2]);
+                //console.log("normal[0] = " + normal[0] + "normal[1] = " + normal[1] + "normal[2]" + normal[2]);
                 if (normal[2] > -.2 && normal[2] < 0.5 && extendedFingers < 3  && extendedFingers > 0 && radius <= 60) {
                     cat = (cats[0] || (cats[0] = new Cat()));
                     //console.log(" the finger is index " + pincher.type + "<br />");

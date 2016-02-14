@@ -18,6 +18,8 @@ Leap.loop()
 
 
 
+
+
 // Setup Leap loop with frame callback function
 
 /*var controller = new Leap.Controller({
@@ -56,7 +58,7 @@ var Cat = function() {
         document.body.appendChild(img);
     };*/
     var img = document.getElementById("mainImage");
-    console.log("source: " + img.src);
+    //console.log("source: " + img.src);
     img.style.position = 'absolute';
 
     var b, c = 0;
@@ -65,8 +67,8 @@ var Cat = function() {
         c = img.height;
         var percentHeight = c / img.parentNode.clientHeight;
 
-        console.log(" height: " + c + "parentHeight: " + img.parentNode.clientHeight);
-        console.log(" percentHeight: " + percentHeight);
+        //console.log(" height: " + c + "parentHeight: " + img.parentNode.clientHeight);
+        //console.log(" percentHeight: " + percentHeight);
         if (zm1 > 1 || (zm1 < 1 && percentHeight > 1)) {
             img.style.width = (b * zm1) + "px";
             img.style.height = (c * zm2) + "px";
@@ -106,7 +108,7 @@ var Cat = function() {
 
         var left = position[0] - img.width / 2;
         var leftLimit = ((percentWidth - 1) * img.parentNode.clientWidth);
-        console.log("%Width: " + percentWidth + " top potential: " + left + " limit: " + leftLimit);
+        //console.log("%Width: " + percentWidth + " top potential: " + left + " limit: " + leftLimit);
         if (percentWidth >= 1 && (left < ((percentWidth - 1) * img.parentNode. clientWidth))) {
             img.style.left = position[0] - img.width  / 2 + 'px';
         }
