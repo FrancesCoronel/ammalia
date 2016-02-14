@@ -5,6 +5,11 @@
 ## Inspiration
 
 - https://github.com/leapmotion/VRCollage
+- https://community.leapmotion.com/t/pinch-gesture-javascript/2640
+- https://developer.leapmotion.com/documentation/javascript/devguide/Leap_Gestures.html
+- https://developer.leapmotion.com/documentation/javascript/devguide/Leap_Gestures.html
+- https://developer.leapmotion.com/documentation/javascript/api/Leap.ScreenTapGesture.html
+- https://developer.leapmotion.com/documentation/javascript/api/Leap.Controller.html
 
 ## Name
 
@@ -65,10 +70,6 @@ We created a Leap Motion assisted application that utilizes the Dropbox API to s
 ## Links
 
 - Google Slides: https://docs.google.com/presentation/d/1mchd_o4IJ-x910CDxPIdBNIgvsS2QOiTWx4-frbWfpQ/edit?usp=sharing
-
-## Dummy Account
-
--
 
 ## Branding
 
