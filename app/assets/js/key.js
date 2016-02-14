@@ -1,1 +1,0 @@
-var APP_KEY = 'x5q1v8jojmd8m30';

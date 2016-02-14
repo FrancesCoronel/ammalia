@@ -20,6 +20,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/app\/assets\/css\/patientList.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/assets\/css\/patientList.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/app\/assets\/css\/patientList.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -144,17 +153,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/app\/assets\/js\/key.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/app\/assets\/js\/key.js",
-		"outputAbbreviatedPath": "\/app\/assets\/js\/min\/key-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/app\/assets\/js\/min\/ammalia-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -183,17 +181,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/assets\/js\/min\/dropbox-min.js",
 		"outputAbbreviatedPath": "\/app\/assets\/js\/min\/min\/dropbox-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/app\/assets\/js\/min\/key-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/app\/assets\/js\/min\/key-min.js",
-		"outputAbbreviatedPath": "\/app\/assets\/js\/min\/min\/key-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -1272,6 +1259,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/min\/test-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/min\/test-min.js",
+		"outputAbbreviatedPath": "\/min\/min\/test-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/README.md": {
 		"criticStyle": 0,

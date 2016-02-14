@@ -1,3 +1,5 @@
+var APP_KEY = 'x5q1v8jojmd8m30';
+
 if (window.location.href.indexOf('http://') === 0 && window.location.host.indexOf('127.0.0.1') !== 0) {
     window.location = window.location.href.replace('http://', 'https://');
 }
