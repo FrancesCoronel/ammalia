@@ -12,13 +12,12 @@ Leap.loop(function(frame) {
 }).use('screenPosition', {
     scale: 0.25
 });*/
-
-
-// Setup Leap loop with frame callback function
-
 Leap.loop()
     .use('zoomEvent')
     .use('swipeEvent');
+
+// Setup Leap loop with frame callback function
+
 /*var controller = new Leap.Controller({
     enableGestures: true
 });
@@ -47,13 +46,16 @@ var cats = {};
 
 var Cat = function() {
     var cat = this;
-    var img = document.createElement('img');
+    /*var img = document.createElement('img');
     img.src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/109794/cat_2.png';
     img.style.position = 'absolute';
     img.onload = function() {
         cat.setTransform([window.innerWidth / 2, window.innerHeight / 2], 0);
         document.body.appendChild(img);
-    };
+    };*/
+    var img = document.getElementById("mainImage");
+    console.log("source: " + img.src);
+    img.style.position = 'absolute';
 
     var b, c = 0;
     cat.setTransform = function(b, c, zm1, zm2) {
@@ -70,9 +72,11 @@ var Cat = function() {
             img.style.OTransform = img.style.transform;
 
     };
+    
 };
 
 cats[0] = new Cat();
+
 
 
 /*var Cat = function() {
