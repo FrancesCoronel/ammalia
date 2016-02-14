@@ -11,19 +11,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <!-- For old IEs -->
-    <link rel="shortcut icon" href="favicons/favicon.ico" />
+    <link rel="shortcut icon" href=".static/favicons/favicon.ico" />
     <!-- For new browsers multisize ico  -->
-    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="favicons/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href=".static/favicons/favicon.ico">
     <!-- Chrome for Android -->
-    <link rel="icon" sizes="192x192" href="favicons/favicon-192.png">
+    <link rel="icon" sizes="192x192" href=".static/favicons/favicon-192.png">
     <!-- For iPhone 6+ downscaled for other devices -->
-    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="favicons/favicon-180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href=".static/favicons/favicon-180.png">
     <!-- For IE10 Metro -->
     <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="msapplication-TileImage" content="favicon-144.png">
-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/main.css') }}">
+    <meta name="msapplication-TileImage" content=".static/favicon-144.png">
+    <!--[if lte IE 8]><script src="static/js/ie/html5shiv.js"></script><![endif]-->
+    <!-- <link rel="stylesheet" href="static/css/main.css" /> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
 
 </head>
 
@@ -32,8 +32,8 @@
     <div id="wrapper">
         <!-- Header -->
         <header id="header">
-            <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-            <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+            <!--[if lte IE 9]><link rel="stylesheet" href="static/css/ie9.css" /><![endif]-->
+            <!--[if lte IE 8]><link rel="stylesheet" href="static/css/ie8.css" /><![endif]-->
             <h1><a href="index.html"><code>Ammalia</code> <strong>TreeHacks Spring 2016</strong></a></h1>
             <nav>
                 <ul>
@@ -56,8 +56,8 @@
                 <img src="http://a57.foxnews.com/images.foxnews.com/content/fox-news/health/2015/11/10/promise-seen-for-wireless-pacemakers-placed-without-surgery/_jcr_content/par/featured-media/media-0.img.jpg/876/493/1447160388550.jpg?ve=1&tl=1" class="even" alt="" />
             </article>
             <article class="thumb logo">
-                <img src="{{ url_for('static', filename='branding/Horizontal - Copy (2).png') }}" alt="" class="logo" />
-                <h1><a class="link" href="http://www.google.com"> Download </a></h1>
+                <img src="{{ url_for('static', filename='images/Horizontal - Copy (2).png') }}" alt="" class="logo" />
+                <h1><a class="link" href="/enter"> Download </a></h1>
             </article>
             <article class="thumb large">
                 <img src="{{ url_for('static', filename='images/thumbs/Surgeons.png') }}" class="large" alt="" />
@@ -84,6 +84,7 @@
                         <h2>Follow <code>Frances</code> on <a href="http://github.com/fvcproductions" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></h2>
                         <h2>Follow <code>Stephanie</code> on <a href="http://github.com/fvcproductions" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></h2>
                         <h2>Follow <code>Diana</code> on <a href="http://github.com/fvcproductions" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></h2>
+                        <h2>Follow <code>Effie</code> on <a href="http://github.com/fvcproductions" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></h2>
                     </section>
                     <p class="copyright">
                         &copy; Big Hero 4. Design: <a href="http://html5up.net">HTML5 UP</a>.
@@ -93,12 +94,12 @@
         </footer>
     </div>
     <!-- Scripts -->
-    <script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='assets/js/jquery.poptrox.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='assets/js/skel.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
-    <!--[if lte IE 8]><script src="{{ url_for('static', filename='assets/js/ie/respond.min.js') }}"></script><![endif]-->
-    <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.poptrox.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/skel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/util.js') }}"></script>
+    <!--[if lte IE 8]><script src="{{ url_for('static', filename='./static/js/ie/respond.min.js') }}"></script><![endif]-->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 
 </html>

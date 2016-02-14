@@ -9,17 +9,22 @@ dbx.users_get_current_account()
 
 @app.route('/')
 def home():
-	
+
 	return render_template('index.html')
+
+@app.route('/enter')
+def enter():
+
+	return render_template('enter.html')
 
 @app.route('/ammalia')
 def test():
-	
+
 	return render_template('viewimage.html')
 
 @app.route('/images')
 def images():
-	
+
 	#List files from the folder
 	entries = dbx.files_list_folder(path='/ammalia').entries
 
@@ -29,7 +34,7 @@ def images():
 		link = dbx.sharing_create_shared_link(entry.path_lower)
 		link.url += "&raw=1"
 		dropbox_images.append(link)
-	
+
 	#return dropbox_images
 	return render_template('images.html', images=dropbox_images)
 
