@@ -1,9 +1,22 @@
 Leap.plugin('swipeEvent', function(scope){
-  this.use('screenPosition', {
+  /*this.use('screenPosition', {
       scale: 0.25
-  });
+  });*/
+  this.use('screenPosition');
 
   return {
+    frame: function(frame){
+      frame.hands.forEach(function(hand, index) {
+        var cat = ( cats[index] || (cats[index] = new Cat()) );
+        var normal = hand.palmNormal;
+        if (normal[2] < -0.5) {
+          cat.setSwipe(hand.screenPosition());
+        }
+      });
+    }
+  }
+
+  /*return {
     frame: function(frame) {
       var controllerOptions = {enableGestures: true};
 
@@ -33,6 +46,6 @@ Leap.plugin('swipeEvent', function(scope){
          }
       }
     }
-  }
+  }*/
 });
 

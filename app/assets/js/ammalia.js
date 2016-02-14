@@ -16,6 +16,8 @@ Leap.loop()
     .use('zoomEvent')
     .use('swipeEvent');
 
+
+
 // Setup Leap loop with frame callback function
 
 /*var controller = new Leap.Controller({
@@ -58,21 +60,74 @@ var Cat = function() {
     img.style.position = 'absolute';
 
     var b, c = 0;
-    cat.setTransform = function(b, c, zm1, zm2) {
-
+    cat.setZoom = function(b, c, zm1, zm2) {
         b = img.width;
         c = img.height;
+        var percentHeight = c / img.parentNode.clientHeight;
 
-        img.style.width = (b * zm1) + "px";
-        img.style.height = (c * zm2) + "px";
-        img.style.marginLeft = -(img.width / 2) + "px";
-        img.style.marginTop = -(img.height / 2) + "px";
+        console.log(" height: " + c + "parentHeight: " + img.parentNode.clientHeight);
+        console.log(" percentHeight: " + percentHeight);
+        if (zm1 > 1 || (zm1 < 1 && percentHeight > 1)) {
+            img.style.width = (b * zm1) + "px";
+            img.style.height = (c * zm2) + "px";
 
-        img.style.webkitTransform = img.style.MozTransform = img.style.msTransform =
-            img.style.OTransform = img.style.transform;
+            percentHeight = img.height / img.parentNode.clientHeight;
+            if (percentHeight >= 0.95) {
+                img.style.top = 0 + 'px';
+                img.style.bottom = 0 + 'px';
+            }
+
+            //img.style.marginLeft = -(img.width / 2) + "px";
+            //img.style.marginTop = -(img.height / 2) + "px";
+
+            img.style.webkitTransform = img.style.MozTransform = img.style.msTransform =
+                img.style.OTransform = img.style.transform;
+        }
 
     };
-    
+    cat.setSwipe = function(position) {
+        var b = img.width;
+        var c = img.height;
+
+        var percentWidth = b / img.parentNode.clientWidth;
+        var percentHeight = c / img.parentNode.clientHeight;
+
+        /*img.style.left = position[0] - img.width  / 2 + 'px';
+
+        var top = position[1] - img.height / 2;
+        var topLimit = ((percentHeight - 1) * img.parentNode.clientHeight);
+        console.log("%Height: " + percentHeight + " top potential: " + Math.abs(top) + " limit: " + topLimit);
+        if (percentHeight > 1 && (Math.abs(top) < ((percentHeight - 1) * img.parentNode.clientHeight))) {
+            img.style.top  = position[1] - img.height / 2 + 'px';
+        }
+
+        img.style.webkitTransform = img.style.MozTransform = img.style.msTransform =
+        img.style.OTransform = img.style.transform;*/
+
+        var left = position[0] - img.width / 2;
+        var leftLimit = ((percentWidth - 1) * img.parentNode.clientWidth);
+        console.log("%Width: " + percentWidth + " top potential: " + left + " limit: " + leftLimit);
+        if (percentWidth > 1 && (left < ((percentWidth - 1) * img.parentNode. clientWidth))) {
+            img.style.left = position[0] - img.width  / 2 + 'px';
+        }
+
+        /*var top = position[1] - img.height / 2;
+        var topLimit = ((percentHeight - 1) * img.parentNode.clientHeight);
+        console.log("%Height: " + percentHeight + " top potential: " + top + " limit: " + topLimit);
+        topLimit = -1 * topLimit;
+        if (percentHeight > 1 && topLimit <= 0 && topLimit >= (-1 * img.height)) {
+            img.style.top  = topLimit + 'px';
+        }*/
+        console.log("position[1]: " + position[1] + " position[2]: " + position[2]);
+        var top = position[1] - img.height / 2;
+        var topLimit = ((percentHeight - 1) * img.parentNode.clientHeight);
+        console.log("%Height: " + percentHeight + " top potential: " + Math.abs(top) + " limit: " + topLimit);
+        if (percentHeight > 1 && (Math.abs(top) < ((percentHeight - 1) * img.parentNode.clientHeight))) {
+            img.style.top = Math.min(0, position[1] - img.height / 2) + 'px';
+            img.style.bottom = Math.max(position[1] - img.height / 2, -1 * img.height);
+        }
+
+    };
 };
 
 cats[0] = new Cat();
