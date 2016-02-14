@@ -20,7 +20,7 @@ def enter():
 @app.route('/ammalia')
 def test():
 
-	return render_template('viewimage.html')
+	return render_template('viewImage.html')
 
 @app.route('/images')
 def images():
@@ -36,8 +36,7 @@ def images():
 		dropbox_images.append(link)
 
 	#return dropbox_images
-	return render_template('viewImage.html', images=dropbox_images)
+	return render_template('images.html', images=dropbox_images)
 
 if __name__ == '__main__':
 	app.run()
-
