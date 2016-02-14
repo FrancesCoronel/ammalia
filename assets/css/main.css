@@ -7,6 +7,9 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+
+
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -1984,3 +1987,32 @@
 		#footer .copyright a {
 			color: inherit;
 		}
+
+		/* Custom CSS */
+img.logo {
+    width: 100%;
+    margin-top: 2.2em;
+}
+article.thumb.logo {
+    background-color: white;
+    /*background-image: linear-gradient(to top, rgba(1.5,3,5,0) 0%, rgba(5,8.5,13.5,0) 0%);*/
+    background-image: none;
+}
+a.link {
+    font-size: xx-large;
+    color: darkslateblue;
+}
+img.large {
+    width: 110%;
+}
+img.even {
+    width: 115%;
+}
+img.small {
+    width: 100%;
+}
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: .9em;
+}
