@@ -21,20 +21,20 @@
     <meta name="msapplication-TileImage" content="./static/favicon-144.png">
     <!--[if lte IE 8]><script src="static/js/ie/html5shiv.js"></script><![endif]-->
     <!-- <link rel="stylesheet" href="static/css/main.css" /> -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/viewImage.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/viewImage.css') }}" />
     <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
 
     <body>
-        <img id="mainImage" src="{{ url_for('static', filename='images/Scans/top_view1.jpg') }}"> {% for image in images %}
-        <img src="{{ image.url }}" id="mainImage"/> {% endfor %}
+        <img id="mainImage" src="{{ url_for('static', filename='images/scans/top_view1.jpg') }}"> <!--{% for image in images %}-->
+       <!-- <img src="{{ image.url }}" id="mainImage"/>--> <!--{% endfor %}-->
         <!-- Leap JS -->
         <script src="http://js.leapmotion.com/leap-0.6.4.min.js"></script>
         <!-- Leap Plugins -->
         <script src="http://js.leapmotion.com/leap-plugins-0.1.11.min.js"></script>
-        <script type="text/javascript" src="{{ url_for('static', filename='assets/js/events/zoomEvent.js') }}"></script>
-        <script type="text/javascript" src="{{ url_for('static', filename='assets/js/events/swipeEvent.js') }}"></script>
-        <script type="text/javascript" src="{{ url_for('static', filename='assets/js/ammalia.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/events/zoomEvent.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/events/swipeEvent.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/ammalia.js') }}"></script>
     </body>
 
 </html>
